@@ -1,0 +1,33 @@
+{
+  "compilerOptions": {
+    "target": "es2017",
+    "lib": ["es7", "ES2017.object"],
+    "module": "commonjs",
+    "rootDir": "./lib",
+    "outDir": "./dist",
+    "diagnostics": true,
+    "noUnusedLocals": true,
+    "noEmitOnError": false,
+    "noImplicitAny": false,
+    "noImplicitThis": true,
+    "skipLibCheck": true,
+    "removeComments": true,
+    "noLib": false,
+    "sourceMap": true
+  },
+  "compileOnSave": true,
+  "formatCodeOptions": {
+    "indentSize": 4,
+    "tabSize": 4,
+    "indentStyle": "smart",
+    "convertTabsToSpaces": true,
+    "insertSpaceAfterCommaDelimiter": true,
+    "insertSpaceAfterSemicolonInForStatements": true,
+    "insertSpaceBeforeAndAfterBinaryOperators": true,
+    "insertSpaceAfterKeywordsInControlFlowStatements": true,
+    "insertSpaceAfterFunctionKeywordForAnonymousFunctions": false,
+    "insertSpaceAfterOpeningAndBeforeClosingNonemptyParenthesis": false,
+    "placeOpenBraceOnNewLineForFunctions": false,
+    "placeOpenBraceOnNewLineForControlBlocks": false
+    }
+}

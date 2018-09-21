@@ -1,19 +1,18 @@
-'use babel';
-
-import CursorLocator from './cursor-locator';
+import FileContext from './file-context';
 import CursorToCursorBuffer from './cursor-to-cursor-buffer'
 import FileSplitter from './file-splitter'
 import { CompositeDisposable } from 'atom';
 
 export default {
 
-  cursorLocator: null,
+  fileContext: null,
   cursorToCursorBuffer: null,
+  fileSplitter: null,
   subscriptions: null,
 
-  activate(state) {
+  activate() {
     this._registerServices();
-    
+
     // Events subscribed to in atom's system can be easily cleaned up with a CompositeDisposable
     this.subscriptions = new CompositeDisposable();
 
@@ -24,21 +23,18 @@ export default {
   },
 
   deactivate() {
-    delete this.cursorLocator;
+    delete this.fileContext;
     this.subscriptions.dispose();
   },
 
   _registerServices() {
-    this.cursorLocator = new CursorLocator(atom.workspace);
-    this.cursorToCursorBuffer = new CursorToCursorBuffer(this.cursorLocator);
-    this.fileSplitter = new FileSplitter(this.cursorToCursorBuffer);    
+    this.fileContext = new FileContext(atom.workspace);
+    this.cursorToCursorBuffer = new CursorToCursorBuffer(this.fileContext);
+    this.fileSplitter = new FileSplitter(this.fileContext, this.cursorToCursorBuffer);
   },
-  
+
   _split() {
-      this.fileSplitter.startSplitting()
-      .then(status => {
-          
-      });
+      this.fileSplitter.startSplitting();
   }
 
 };
