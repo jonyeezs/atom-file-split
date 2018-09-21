@@ -10,14 +10,14 @@
     "split",
     "file",
     "files"
-    ],
+  ],
   "repository": "https://github.com/jonyeezs/atom-file-split",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
   },
   "activationCommands": {
-      "atom-text-editor": "file-split:split"
+    "atom-text-editor": "file-split:split"
   },
   "dependencies": {},
   "devDependencies": {
