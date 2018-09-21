@@ -3,14 +3,21 @@
   "main": "./dist/main",
   "version": "0.0.0",
   "description": "A short description of your package",
-  "keywords": [],
+  "keywords": [
+    "multiple",
+    "cursor",
+    "separate",
+    "split",
+    "file",
+    "files"
+    ],
+  "repository": "https://github.com/jonyeezs/atom-file-split",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
   },
   "activationCommands": {
       "atom-text-editor": "file-split:split"
-
   },
   "dependencies": {},
   "devDependencies": {
