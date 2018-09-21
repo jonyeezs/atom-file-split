@@ -1,0 +1,21 @@
+{
+  "context-menu": {
+    "atom-text-editor": [
+      {
+        "label": "Split cursors to files",
+        "command": "file-split:split"
+      }
+    ]
+  },
+  "menu": [
+    {
+      "label": "Packages",
+      "submenu": [
+        {
+          "label": "Split File",
+          "command": "file-split:split"
+        }
+      ]
+    }
+  ]
+}
