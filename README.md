@@ -2,7 +2,7 @@
 
 An Atom package that allows you to separate your file at cursors into multiple files.
 
-![demo]()
+![demo](https://raw.githubusercontent.com/jonyeezs/atom-file-split/master/file-split.gif)
 
 ## Installation
 
