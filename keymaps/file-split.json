@@ -1,5 +1,5 @@
 {
   "atom-text-editor": {
-    "ctrl-alt-s": "file-split:split"
+    "ctrl-alt-n": "file-split:split"
   }
 }
